@@ -11,6 +11,11 @@ import  com.sraynitjsr._8_inputoutput.*;
 import  com.sraynitjsr._9_classinterface.*;
 import  com.sraynitjsr._10_oops.MyOOPS;
 import  com.sraynitjsr._11_keywords.MyKeywords;
+import  com.sraynitjsr._12_exceptions.MyExceptionHandling;
+import  com.sraynitjsr._13_multithreading.MyMultithreading;
+import  com.sraynitjsr._14_collections.*;
+import  com.sraynitjsr._15_streams.*;
+import com.sraynitjsr._16_designpatterns.MyDesignPatterns;
 
 import  org.springframework.boot.SpringApplication;
 import  org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -33,5 +38,10 @@ public class MySpringBootApplication {
         MyClassInterface.start();
         MyOOPS.start();
         MyKeywords.start();
+        MyExceptionHandling.start();
+        MyMultithreading.start();
+        MyCollections.start();
+        MyStreamAPI.start();
+        MyDesignPatterns.start();
     }
 }
