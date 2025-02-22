@@ -9,13 +9,14 @@ import  com.sraynitjsr._6_array.*;
 import  com.sraynitjsr._7_strings.*;
 import  com.sraynitjsr._8_inputoutput.*;
 import  com.sraynitjsr._9_classinterface.*;
-import  com.sraynitjsr._10_oops.MyOOPS;
-import  com.sraynitjsr._11_keywords.MyKeywords;
-import  com.sraynitjsr._12_exceptions.MyExceptionHandling;
-import  com.sraynitjsr._13_multithreading.MyMultithreading;
+import  com.sraynitjsr._10_oops.*;
+import  com.sraynitjsr._11_keywords.*;
+import  com.sraynitjsr._12_exceptions.*;
+import  com.sraynitjsr._13_multithreading.*;
 import  com.sraynitjsr._14_collections.*;
 import  com.sraynitjsr._15_streams.*;
-import com.sraynitjsr._16_designpatterns.MyDesignPatterns;
+import  com.sraynitjsr._16_designpatterns.*;
+import  com.sraynitjsr._17_dsa_practice.*;
 
 import  org.springframework.boot.SpringApplication;
 import  org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -43,5 +44,6 @@ public class MySpringBootApplication {
         MyCollections.start();
         MyStreamAPI.start();
         MyDesignPatterns.start();
+        MyDSAPractice.start();
     }
 }
