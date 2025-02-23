@@ -9,5 +9,8 @@ public class MyLambdaExpressions {
 
         System.out.println("\nLambda Type B, With Parameters");
         Lambda2.start();
+
+        System.out.println("\nSorting HashMap Using Lambda Expression");
+        Lambda3_HashMap_Sorting.start();
     }
 }
