@@ -1,4 +1,4 @@
-package com.sraynitjsr._15_streams;
+package com.sraynitjsr._15_java8_and_streams;
 
 public class MyStreamAPI {
     public static void start() {

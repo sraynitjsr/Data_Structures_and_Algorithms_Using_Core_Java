@@ -14,7 +14,7 @@ import  com.sraynitjsr._11_keywords.*;
 import  com.sraynitjsr._12_exceptions.*;
 import  com.sraynitjsr._13_multithreading.*;
 import  com.sraynitjsr._14_collections.*;
-import  com.sraynitjsr._15_streams.*;
+import  com.sraynitjsr._15_java8_and_streams.*;
 import  com.sraynitjsr._16_designpatterns.*;
 import  com.sraynitjsr._17_dsa_practice.*;
 
