@@ -6,5 +6,8 @@ public class MyLambdaExpressions {
 
         System.out.println("\nLambda Type A, No Parameters");
         Lambda1.start();
+
+        System.out.println("\nLambda Type B, With Parameters");
+        Lambda2.start();
     }
 }
