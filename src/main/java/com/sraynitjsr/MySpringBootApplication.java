@@ -40,7 +40,11 @@ public class MySpringBootApplication {
         MyOOPS.start();
         MyKeywords.start();
         MyExceptionHandling.start();*/
-        MyMultithreading.start();
+        try {
+            MyMultithreading.start();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 /*      MyCollections.start();
         MyStreamAPI.start();
         MyDesignPatterns.start();
