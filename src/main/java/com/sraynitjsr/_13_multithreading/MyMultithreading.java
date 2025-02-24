@@ -6,5 +6,7 @@ public class MyMultithreading {
         // Synchronization Used
         // Threading
         // Executor Framework
+        Thread1.start();
+        Thread2.start();
     }
 }

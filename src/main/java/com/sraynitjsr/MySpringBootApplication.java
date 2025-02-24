@@ -28,7 +28,7 @@ public class MySpringBootApplication {
         callRespectiveModules();
     }
     public static void callRespectiveModules() {
-        MyVariables.start();
+/*      MyVariables.start();
         MyDataTypes.start();
         MyUserDefinedDataTypes.start();
         MyControlStatements.start();
@@ -39,11 +39,11 @@ public class MySpringBootApplication {
         MyClassInterface.start();
         MyOOPS.start();
         MyKeywords.start();
-        MyExceptionHandling.start();
+        MyExceptionHandling.start();*/
         MyMultithreading.start();
-        MyCollections.start();
+/*      MyCollections.start();
         MyStreamAPI.start();
         MyDesignPatterns.start();
-        MyDSAPractice.start();
+        MyDSAPractice.start();*/
     }
 }
