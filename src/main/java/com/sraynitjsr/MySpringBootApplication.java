@@ -30,8 +30,8 @@ public class MySpringBootApplication {
     }
 
     public static void callRespectiveModules() throws Exception {
-        /*MyVariables.start();
         MyDataTypes.start();
+        /*MyVariables.start();
         MyUserDefinedDataTypes.start();
         MyControlStatements.start();
         MyLoops.start();
@@ -46,7 +46,7 @@ public class MySpringBootApplication {
         MyCollections.start();
         MyStreamAPI.start();
         MyDesignPatterns.start();
-        MyDSAPractice.start();*/
-        MyNewFeaturesInJava.start();
+        MyDSAPractice.start();
+        MyNewFeaturesInJava.start();*/
     }
 }
