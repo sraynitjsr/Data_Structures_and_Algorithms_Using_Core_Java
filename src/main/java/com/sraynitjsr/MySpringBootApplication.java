@@ -17,6 +17,7 @@ import com.sraynitjsr._14_collections.*;
 import com.sraynitjsr._15_java8_and_streams.*;
 import com.sraynitjsr._16_designpatterns.*;
 import com.sraynitjsr._17_dsa_practice.*;
+import com.sraynitjsr._18_java_new_stuff.MyNewFeaturesInJava;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -29,7 +30,7 @@ public class MySpringBootApplication {
     }
 
     public static void callRespectiveModules() throws Exception {
-/*      MyVariables.start();
+        /*MyVariables.start();
         MyDataTypes.start();
         MyUserDefinedDataTypes.start();
         MyControlStatements.start();
@@ -40,11 +41,12 @@ public class MySpringBootApplication {
         MyClassInterface.start();
         MyOOPS.start();
         MyKeywords.start();
-        MyExceptionHandling.start();*/
+        MyExceptionHandling.start();
         MyMultithreading.start();
-/*      MyCollections.start();
+        MyCollections.start();
         MyStreamAPI.start();
         MyDesignPatterns.start();
         MyDSAPractice.start();*/
+        MyNewFeaturesInJava.start();
     }
 }
