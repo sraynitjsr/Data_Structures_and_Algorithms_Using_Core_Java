@@ -30,9 +30,9 @@ public class MySpringBootApplication {
     }
 
     public static void callRespectiveModules() throws Exception {
-        //MyDataTypes.start();
+        /*MyDataTypes.start();
         MyVariables.start();
-        /*MyUserDefinedDataTypes.start();
+        MyUserDefinedDataTypes.start();
         MyControlStatements.start();
         MyLoops.start();
         MyArrays.start();

@@ -2,14 +2,29 @@ package com.sraynitjsr._13_multithreading;
 
 class SharedResource {
     private int count = 1;
-    private String flag = "Odd";
+    private final int LIMIT = 10;
 
-    synchronized void printCount() {
-        while (count <= 10) {
-            if (flag.equals("Odd") == (count % 2 != 0)) {
-                System.out.println(flag + " => " + count);
+    synchronized void printOdd() {
+        while (count <= LIMIT) {
+            if (count % 2 != 0) {
+                System.out.println(count + " from " + Thread.currentThread().getName());
                 count++;
-                flag = flag.equals("Odd") ? "Even" : "Odd";
+                notify();
+            } else {
+                try {
+                    wait();
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+            }
+        }
+    }
+
+    synchronized void printEven() {
+        while (count <= LIMIT) {
+            if (count % 2 == 0) {
+                System.out.println(count + " from " + Thread.currentThread().getName());
+                count++;
                 notify();
             } else {
                 try {
@@ -22,20 +37,52 @@ class SharedResource {
     }
 }
 
+class OddPrinter implements Runnable {
+    SharedResource sharedResource;
+
+    public OddPrinter(SharedResource resource) {
+        this.sharedResource = resource;
+    }
+
+    public void run() {
+        this.sharedResource.printOdd();
+    }
+}
+
+class EvenPrinter implements Runnable {
+    SharedResource sharedResource;
+
+    public EvenPrinter(SharedResource resource) {
+        this.sharedResource = resource;
+    }
+
+    public void run() {
+        this.sharedResource.printEven();
+    }
+}
+
 public class Thread4_Synchronization_OddEven {
     public static void start() {
         System.out.println("\nStarting of Odd Even Printing");
+
         SharedResource resource = new SharedResource();
-        Thread t1 = new Thread(resource::printCount);
-        Thread t2 = new Thread(resource::printCount);
-        t1.start();
-        t2.start();
+
+        OddPrinter oddPrinter = new OddPrinter(resource);
+        EvenPrinter evenPrinter = new EvenPrinter(resource);
+
+        Thread oddThread = new Thread(oddPrinter, "Thread-Odd");
+        Thread evenThread = new Thread(evenPrinter, "Thread-Even");
+
+        oddThread.start();
+        evenThread.start();
+
         try {
-            t1.join();
-            t2.join();
+            oddThread.join();
+            evenThread.join();
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            Thread.currentThread().interrupt();
         }
+
         System.out.println("End of Odd Even Printing");
     }
 }
