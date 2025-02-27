@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Lambda3_HashMap_Sorting {
+public class Lambda3 {
     public static void sortByKey(HashMap<String, Integer> myHashMap) {
         System.out.println("\nSorting by Key Using Lambda and Stream");
 
