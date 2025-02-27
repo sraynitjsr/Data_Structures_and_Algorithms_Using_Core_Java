@@ -17,5 +17,8 @@ public class MyStreamAPI {
 
         System.out.println("\nCount Each String's Frequency in A List");
         Lambda4.start();
+
+        System.out.println("\nNth Highest Salary");
+        Lambda5.start();
     }
 }
