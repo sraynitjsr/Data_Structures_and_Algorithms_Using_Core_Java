@@ -7,5 +7,6 @@ public class MyMultithreading {
         Thread2.start();
         Thread3.start();
         Thread4_Synchronization_OddEven.start();
+        MyCountDownLatch.start();
     }
 }
