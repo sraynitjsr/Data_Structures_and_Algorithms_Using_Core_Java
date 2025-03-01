@@ -61,9 +61,9 @@ class EvenPrinter implements Runnable {
     }
 }
 
-public class Thread4_Synchronization_OddEven {
+public class Thread4 {
     public static void start() {
-        System.out.println("\nStarting of Odd Even Printing");
+        System.out.println("\nMultithreading Example 4, Odd Even Printing With 2 Threads");
 
         SharedResource resource = new SharedResource();
 

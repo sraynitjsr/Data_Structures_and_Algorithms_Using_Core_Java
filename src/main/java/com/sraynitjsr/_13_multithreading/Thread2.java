@@ -8,6 +8,7 @@ class MyClass2 implements Runnable {
 
 public class Thread2 {
     public static void start() {
+        System.out.println("\nMultithreading Example 2, Implementing Runnable Interface");
         MyClass2 obj = new MyClass2();
         Thread t = new Thread(obj);
         t.start();

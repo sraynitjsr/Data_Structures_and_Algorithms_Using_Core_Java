@@ -48,6 +48,5 @@ public class MySpringBootApplication {
         MyDesignPatterns.start();
         MyDSAPractice.start();
         MyNewFeaturesInJava.start();*/
-        MyMultithreading.start();
     }
 }

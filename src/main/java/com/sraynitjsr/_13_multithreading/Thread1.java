@@ -8,6 +8,7 @@ class MyClass1 extends Thread {
 
 public class Thread1 {
     public static void start() {
+        System.out.println("\nMultithreading Example 1, Extending Thread Class");
         MyClass1 obj = new MyClass1();
         obj.start();
     }

@@ -16,6 +16,7 @@ class MyClass3 implements Runnable {
 
 public class Thread3 {
     public static void start() throws Exception {
+        System.out.println("\nMultithreading Example 3, Implement Runnable and Some Simple Task");
         MyClass3 obj = new MyClass3();
         Thread t1 = new Thread(obj);
         t1.start();
